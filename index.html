@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Tweet Project</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Tweet Project</h1>
+        <hr>
+        <div class="row">
+          <div class="col py-3 px-lg-5 border bg-light">
+             <h3 class="text-center">
+                 Type Your Tweet Here
+             </h3>
+            <form> 
+            <input class="form-control form-control-lg inputMsg" type="text">
+            <h1 class="text-center">
+                <button type="button" class="btn btn-primary" id="btn">Submit Tweet</button>
+            </h1>
+        </form>
+        <span class="text-danger errMsg"></span> 
+          </div>
+
+          <div class="col py-3 px-lg-5 border bg-light">
+            <input class="form-control form-control-lg searchText" type="text" placeholder="search tweet">
+            <hr/>
+            <ul class="list-group collection">
+
+            </ul>
+            <span class="text-danger msg"></span>
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
