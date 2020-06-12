@@ -7,8 +7,11 @@ let msg = document.querySelector('.msg');
 
 let allTweets = getTweetFromLocalStorage();
 
-btn.addEventListener('click', e => { 
+btn.addEventListener('click', e => {
+    // e.preventDefault();
+    if (e.keyCode == 13) {
     e.preventDefault();
+    }
     let id;
     let tweetMsg = inputMsg.value;
     if (allTweets.length === 0) {
